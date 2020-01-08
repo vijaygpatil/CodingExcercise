@@ -1,6 +1,6 @@
 package com.selfPractice.String;
 
-public class CompareVersionNumbers {
+public class CompareVersionNumbersZ {
 
 	private static int versionCompare(String v1, String v2) {
 		int vnum1 = 0, vnum2 = 0;
@@ -29,8 +29,8 @@ public class CompareVersionNumbers {
 	}
 
 	public static void main(String[] args) {
-		String version1 = "1.0.3";
-		String version2 = "1.0.7";
+		String version1 = "1.0.17";
+		String version2 = "1.0.16";
 
 		if (versionCompare(version1, version2) < 0)
 			System.out.println("version1 << is smaller");

@@ -6,7 +6,7 @@ import java.util.Arrays;
  * * Java program - String Anagram Example. * This program checks if two Strings
  * are anagrams or not * * @author Javin Paul
  */
-public class AnagramCheck {
+public class AnagramCheckZ {
 	/*
 	 * * One way to find if two Strings are anagram in Java. This method *
 	 * assumes both arguments are not null and in lowercase. * * @return true,

@@ -1,6 +1,6 @@
 package com.selfPractice.String;
 
-public class LongestPalidrome {
+public class LongestPalidromeZ {
 	public static void main(String[] args) {
 		String s = "forgeeksskeegfor";
 		System.out.println(longestPalindrome(s));
