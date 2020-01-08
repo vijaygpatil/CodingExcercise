@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map.Entry;
 import java.util.Scanner;
 
-public class AllDistinctPalindromicSubstrings {
+public class AllDistinctPalindromicSubstringsZ {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
