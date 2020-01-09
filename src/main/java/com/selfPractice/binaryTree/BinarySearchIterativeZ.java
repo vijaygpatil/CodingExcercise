@@ -3,7 +3,7 @@ package com.selfPractice.binaryTree;
 import java.util.Arrays;
 import java.util.List;
 
-public class BinarySearchIterative {
+public class BinarySearchIterativeZ {
 
 	public static int searchFirstOfK(List<Integer> A, int k) {
 		int left = 0;

@@ -1,6 +1,6 @@
 package com.selfPractice.binaryTree;
 
-public class BinarySearchRecursive {
+public class BinarySearchRecursiveZ {
 
 	public static int binarySearch(int[] a, int target) {
 		return binarySearch(a, 0, a.length - 1, target);

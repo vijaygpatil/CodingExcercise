@@ -1,6 +1,6 @@
  package com.selfPractice.String;
 
-public class WordCount {
+public class WordCountZ {
 	public static void main(String[] args) {
 		char str[] = "One two          three\n  four\nfive  ".toCharArray();
 		System.out.println("No of words: " + countWords(str));

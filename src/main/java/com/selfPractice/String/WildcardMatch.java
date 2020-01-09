@@ -2,25 +2,25 @@ package com.selfPractice.String;
 
 public class WildcardMatch {
 	public static void main(String[] args) {
-		System.out.println(isMatch("a", "aa"));
-		System.out.println(isMatch("aa", "aa"));
-		System.out.println(isMatch("aa", "aaa"));
-		System.out.println(isMatch("*", "aa"));
-		System.out.println(isMatch("a*", "aa"));
-		System.out.println(isMatch("?*", "ab"));
-		System.out.println(isMatch("c*a*b", "aab"));
-		System.out.println(isMatch("g*ks", "geeks")); // Yes
+//		System.out.println(isMatch("a", "aa"));
+//		System.out.println(isMatch("aa", "aa"));
+//		System.out.println(isMatch("aa", "aaa"));
+//		System.out.println(isMatch("*", "aa"));
+//		System.out.println(isMatch("a*", "aa"));
+//		System.out.println(isMatch("?*", "ab"));
+//		System.out.println(isMatch("c*a*b", "aab"));
+//		System.out.println(isMatch("g*ks", "geeks")); // Yes
 		System.out.println(isMatch("ge?ks*", "geeksforgeeks")); // Yes
-		System.out.println(isMatch("g*k", "gee")); // No because 'k' is not in
-													// second
-		System.out.println(isMatch("*pqrs", "pqrst")); // No because 't' is not
-														// in first
-		System.out.println(isMatch("abc*bcd", "abcdhghgbcd")); // Yes
-		System.out.println(isMatch("abc*c?d", "abcd")); // No because second
-														// must have 2 instances
-														// of 'c'
-		System.out.println(isMatch("*c*d", "abcd")); // Yes
-		System.out.println(isMatch("*?c*d", "abcd")); // Yes
+//		System.out.println(isMatch("g*k", "gee")); // No because 'k' is not in
+//													// second
+//		System.out.println(isMatch("*pqrs", "pqrst")); // No because 't' is not
+//														// in first
+//		System.out.println(isMatch("abc*bcd", "abcdhghgbcd")); // Yes
+//		System.out.println(isMatch("abc*c?d", "abcd")); // No because second
+//														// must have 2 instances
+//														// of 'c'
+//		System.out.println(isMatch("*c*d", "abcd")); // Yes
+//		System.out.println(isMatch("*?c*d", "abcd")); // Yes
 	}
 
 	public static boolean isMatch(String p, String s) {

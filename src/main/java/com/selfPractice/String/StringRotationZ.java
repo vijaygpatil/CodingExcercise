@@ -1,6 +1,6 @@
 package com.selfPractice.String;
 
-public class StringRotation {
+public class StringRotationZ {
 	/*
 	 * Function checks if passed strings (str1 and str2) are rotations of each
 	 * other

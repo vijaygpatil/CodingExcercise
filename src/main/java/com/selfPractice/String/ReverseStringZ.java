@@ -1,6 +1,6 @@
 package com.selfPractice.String;
 
-public class ReverseString {
+public class ReverseStringZ {
 	public static void main(String[] args) {
 		String s = "I like this program very much";
 		reverseString(s);

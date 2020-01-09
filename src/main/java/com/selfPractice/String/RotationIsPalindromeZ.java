@@ -1,6 +1,6 @@
 package com.selfPractice.String;
 
-public class RotationIsPalindrome {
+public class RotationIsPalindromeZ {
 	// A utility function to check if a string str is palindrome
 	static boolean isPalindrome(String str) {
 		// Start from leftmost and rightmost corners of str
@@ -41,8 +41,8 @@ public class RotationIsPalindrome {
 
 	// Driver program to test above function
 	public static void main(String[] args) {
-		//System.out.println(isRotationOfPalindrome("aab"));
+		System.out.println(isRotationOfPalindrome("aab"));
 		System.out.println(isRotationOfPalindrome("abcde"));
-		//System.out.println(isRotationOfPalindrome("aaaad"));
+		System.out.println(isRotationOfPalindrome("aaaad"));
 	}
 }
