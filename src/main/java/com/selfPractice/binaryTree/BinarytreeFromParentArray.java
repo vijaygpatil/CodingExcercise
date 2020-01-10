@@ -22,18 +22,18 @@ package com.selfPractice.binaryTree;
 // A binary tree node  
 class BinarytreeFromParentArray 
 {
-    BinaryTreeNode root;
+    BinaryTreeNodeZ root;
   
     // Creates a node with key as 'i'.  If i is root, then it changes
     // root.  If parent of i is not created, then it creates parent first
-    void createNode(int parent[], int i, BinaryTreeNode created[]) 
+    void createNode(int parent[], int i, BinaryTreeNodeZ created[])
     {
         // If this node is already created
         if (created[i] != null)
             return;
   
         // Create a new node and set created[i]
-        created[i] = new BinaryTreeNode(i);
+        created[i] = new BinaryTreeNodeZ(i);
   
         // If 'i' is root, change root pointer and return
         if (parent[i] == -1) 
@@ -47,7 +47,7 @@ class BinarytreeFromParentArray
             createNode(parent, parent[i], created);
   
         // Find parent pointer
-        BinaryTreeNode p = created[parent[i]];
+        BinaryTreeNodeZ p = created[parent[i]];
   
         // If this is first child of parent
         if (p.left == null)
@@ -59,12 +59,12 @@ class BinarytreeFromParentArray
   
     /* Creates tree from parent[0..n-1] and returns root of 
        the created tree */
-    BinaryTreeNode createTree(int parent[], int n) 
+    BinaryTreeNodeZ createTree(int parent[], int n)
     {    
         // Create an array created[] to keep track
         // of created nodes, initialize all entries
         // as NULL
-        BinaryTreeNode[] created = new BinaryTreeNode[n];
+        BinaryTreeNodeZ[] created = new BinaryTreeNodeZ[n];
         for (int i = 0; i < n; i++) 
             created[i] = null;
   
@@ -81,7 +81,7 @@ class BinarytreeFromParentArray
     }
   
     // Utility function to do inorder traversal
-    void inorder(BinaryTreeNode node) 
+    void inorder(BinaryTreeNodeZ node)
     {
         if (node != null) 
         {
@@ -98,7 +98,7 @@ class BinarytreeFromParentArray
     	BinarytreeFromParentArray tree = new BinarytreeFromParentArray();
         int parent[] = new int[]{-1, 0, 0, 1, 1, 3, 5};
         int n = parent.length;
-        BinaryTreeNode node = tree.createTree(parent, n);
+        BinaryTreeNodeZ node = tree.createTree(parent, n);
         System.out.println("Inorder traversal of constructed tree ");
         tree.inorder(node);
         tree.newLine();

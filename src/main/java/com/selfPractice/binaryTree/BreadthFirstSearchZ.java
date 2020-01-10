@@ -1,10 +1,10 @@
 package com.selfPractice.binaryTree;
 
-public class BreadthFirstSearch {
+public class BreadthFirstSearchZ {
 
-	BinaryTreeNode root;
+	BinaryTreeNodeZ root;
 
-	public BreadthFirstSearch() {
+	public BreadthFirstSearchZ() {
 		root = null;
 	}
 
@@ -15,7 +15,7 @@ public class BreadthFirstSearch {
 			printGivenLevel(root, i);
 	}
 
-	int height(BinaryTreeNode root) {
+	int height(BinaryTreeNodeZ root) {
 		if (root == null)
 			return 0;
 		else {
@@ -25,7 +25,7 @@ public class BreadthFirstSearch {
 		}
 	}
 
-	void printGivenLevel(BinaryTreeNode root, int level) {
+	void printGivenLevel(BinaryTreeNodeZ root, int level) {
 		if (root == null)
 			return;
 		if (level == 1)
@@ -37,12 +37,12 @@ public class BreadthFirstSearch {
 	}
 
 	public static void main(String args[]) {
-		BreadthFirstSearch tree = new BreadthFirstSearch();
-		tree.root = new BinaryTreeNode(1);
-		tree.root.left = new BinaryTreeNode(2);
-		tree.root.right = new BinaryTreeNode(3);
-		tree.root.left.left = new BinaryTreeNode(4);
-		tree.root.left.right = new BinaryTreeNode(5);
+		BreadthFirstSearchZ tree = new BreadthFirstSearchZ();
+		tree.root = new BinaryTreeNodeZ(1);
+		tree.root.left = new BinaryTreeNodeZ(2);
+		tree.root.right = new BinaryTreeNodeZ(3);
+		tree.root.left.left = new BinaryTreeNodeZ(4);
+		tree.root.left.right = new BinaryTreeNodeZ(5);
 
 		System.out.println("Level order traversal of binary tree is ");
 		tree.printLevelOrder();

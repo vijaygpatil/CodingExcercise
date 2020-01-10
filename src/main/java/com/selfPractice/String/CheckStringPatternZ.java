@@ -3,10 +3,10 @@ package com.selfPractice.String;
 import java.util.HashSet;
 import java.util.Set;
 
-public class CheckStringPattern {
+public class CheckStringPatternZ {
 	public static void main(String[] args) {
 		String str = "engineers rock";
-		String pattern = "er";
+		String pattern = "oc";
 		System.out.println(checkPattern(str, pattern));
 		System.out.println(followsPattern(str, pattern));
 	}

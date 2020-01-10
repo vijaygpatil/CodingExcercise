@@ -1,10 +1,10 @@
 package com.selfPractice.binaryTree;
 
-class BinaryTreeNode {
+class BinaryTreeNodeZ {
 	int data;
-	BinaryTreeNode left, right;
+	BinaryTreeNodeZ left, right;
 
-	BinaryTreeNode(int item) {
+	BinaryTreeNodeZ(int item) {
 		data = item;
 		left = right = null;
 	}
