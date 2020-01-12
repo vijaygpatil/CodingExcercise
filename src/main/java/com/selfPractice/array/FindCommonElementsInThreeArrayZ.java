@@ -1,6 +1,6 @@
 package com.selfPractice.array;
 
-public class FindCommonElementsInThreeArray {
+public class FindCommonElementsInThreeArrayZ {
 	// This function prints common elements in ar1
 	void findCommon(int ar1[], int ar2[], int ar3[]) {
 		// Initialize starting indexes for ar1[], ar2[] and ar3[]
@@ -33,7 +33,7 @@ public class FindCommonElementsInThreeArray {
 
 	// Driver code to test above
 	public static void main(String args[]) {
-		FindCommonElementsInThreeArray ob = new FindCommonElementsInThreeArray();
+		FindCommonElementsInThreeArrayZ ob = new FindCommonElementsInThreeArrayZ();
 
 		int ar1[] = { 1, 5, 10, 20, 40, 80 };
 		int ar2[] = { 6, 7, 20, 80, 100 };

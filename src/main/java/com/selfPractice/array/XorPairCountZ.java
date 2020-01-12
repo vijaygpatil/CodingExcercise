@@ -3,7 +3,7 @@ package com.selfPractice.array;
 import java.util.HashSet;
 import java.util.Set;
 
-public class XorPairCount {
+public class XorPairCountZ {
 	private static int xorPairCount(int arr[], int n, int x) {
 		int result = 0; // Initialize result
 		Set<Integer> s = new HashSet<>();

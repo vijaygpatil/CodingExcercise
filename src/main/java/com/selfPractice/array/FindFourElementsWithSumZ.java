@@ -2,7 +2,7 @@ package com.selfPractice.array;
 
 import java.util.Arrays;
 
-public class FindFourElementsWithSum {
+public class FindFourElementsWithSumZ {
 	/*
 	 * A sorting based solution to print all combination of 4 elements in A[]
 	 * with sum equal to X
@@ -43,7 +43,7 @@ public class FindFourElementsWithSum {
 
 	// Driver program to test above functions
 	public static void main(String[] args) {
-		FindFourElementsWithSum findfour = new FindFourElementsWithSum();
+		FindFourElementsWithSumZ findfour = new FindFourElementsWithSumZ();
 		int A[] = { 1, 4, 45, 6, 10, 12 };
 		int n = A.length;
 		int X = 21;

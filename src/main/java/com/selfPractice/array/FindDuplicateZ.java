@@ -1,6 +1,6 @@
  package com.selfPractice.array;
 
-public class FindDuplicate {
+public class FindDuplicateZ {
 	void printRepeating(int arr[], int size) {
 		int i;
 		System.out.println("The repeating elements are : ");
@@ -30,8 +30,8 @@ public class FindDuplicate {
 
 	/* Driver program to test the above function */
 	public static void main(String[] args) {
-		FindDuplicate duplicate = new FindDuplicate();
-		int arr[] = { 4, 2, 4, 5, 2, 3, 1 };
+		FindDuplicateZ duplicate = new FindDuplicateZ();
+		int arr[] = { 14, 2, 4, 5, 2, 3, 1 };
 		int arr_size = arr.length;
 		duplicate.printRepeating(arr, arr_size);
 	}

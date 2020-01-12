@@ -1,6 +1,6 @@
 package com.selfPractice.String;
 
-public class CountCompletePairsOfStrings {
+public class CountCompletePairsOfStringsZ {
 	// Returns count of complete pairs from set[0..n-1] and set2[0..m-1]
 	private static int countCompletePairs(String[] set1, String[] set2, int n, int m) {
 		int result = 0;

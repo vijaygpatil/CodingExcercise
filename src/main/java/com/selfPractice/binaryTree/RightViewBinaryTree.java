@@ -6,11 +6,11 @@ class Max_level {
 
 public class RightViewBinaryTree {
 
-	BinaryTreeNode root;
+	BinaryTreeNodeZ root;
 	Max_level max = new Max_level();
 
 	// Recursive function to print right view of a binary tree.
-	void rightViewUtil(BinaryTreeNode node, int level, Max_level max_level) {
+	void rightViewUtil(BinaryTreeNodeZ node, int level, Max_level max_level) {
 		// Base Case
 		if (node == null)
 			return;
@@ -30,20 +30,20 @@ public class RightViewBinaryTree {
 		rightView(root);
 	}
 
-	void rightView(BinaryTreeNode node) {
+	void rightView(BinaryTreeNodeZ node) {
 		rightViewUtil(node, 1, max);
 	}
 
 	public static void main(String args[]) {
 		RightViewBinaryTree tree = new RightViewBinaryTree();
-		tree.root = new BinaryTreeNode(1);
-		tree.root.left = new BinaryTreeNode(2);
-		tree.root.right = new BinaryTreeNode(3);
-		tree.root.left.left = new BinaryTreeNode(4);
-		tree.root.left.right = new BinaryTreeNode(5);
-		tree.root.right.left = new BinaryTreeNode(6);
-		tree.root.right.right = new BinaryTreeNode(7);
-		tree.root.right.left.right = new BinaryTreeNode(8);
+		tree.root = new BinaryTreeNodeZ(1);
+		tree.root.left = new BinaryTreeNodeZ(2);
+		tree.root.right = new BinaryTreeNodeZ(3);
+		tree.root.left.left = new BinaryTreeNodeZ(4);
+		tree.root.left.right = new BinaryTreeNodeZ(5);
+		tree.root.right.left = new BinaryTreeNodeZ(6);
+		tree.root.right.right = new BinaryTreeNodeZ(7);
+		tree.root.right.left.right = new BinaryTreeNodeZ(8);
 		tree.rightView();
 	}
 }

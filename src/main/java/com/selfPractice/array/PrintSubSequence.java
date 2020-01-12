@@ -26,7 +26,7 @@ public class PrintSubSequence {
 
 	// Driver program
 	public static void main(String[] args) {
-		int arr[] = { 1, 2, 3, 4 };
+		int arr[] = { 4, 2, 7, 5 };
 		int n = arr.length;
 		printSubsequences(arr, n);
 	}
