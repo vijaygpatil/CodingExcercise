@@ -2,7 +2,7 @@ package com.selfPractice.String;
 
 import java.util.HashMap;
 
-class MatchWordPatternInDictionary {
+class MatchWordPatternInDictionaryZ {
 	public static void main(String[] args) {
 		String[] dict = { "abb", "abc", "xyz", "xyy" };
 		String pattern = "mnn";

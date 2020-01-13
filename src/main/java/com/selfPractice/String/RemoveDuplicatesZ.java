@@ -1,6 +1,6 @@
 package com.selfPractice.String;
 
-public class RemoveDuplicates {
+public class RemoveDuplicatesZ {
 
 	public static String removeDup(char[] buf, int n) {
 		char lastchar = buf[0];

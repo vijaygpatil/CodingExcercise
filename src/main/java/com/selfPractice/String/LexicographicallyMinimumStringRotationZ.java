@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class LexicographicallyMinimumStringRotation {
+public class LexicographicallyMinimumStringRotationZ {
 	// A simple C++ program to find lexicographically minimum rotation
 	// of a given string
 
