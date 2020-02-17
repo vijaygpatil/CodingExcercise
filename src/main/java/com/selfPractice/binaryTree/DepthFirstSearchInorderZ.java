@@ -2,7 +2,7 @@ package com.selfPractice.binaryTree;
 
 import java.util.Stack;
 
-public class DepthFirstSearchInorder {
+public class DepthFirstSearchInorderZ {
 	public void DFS(NodeDFS root) {
 		Stack<NodeDFS> s = new Stack<NodeDFS>();
 		s.add(root);
@@ -34,7 +34,7 @@ public class DepthFirstSearchInorder {
 		root.right.left = new NodeDFS(6);
 		root.right.right = new NodeDFS(7);
 
-		DepthFirstSearchInorder b = new DepthFirstSearchInorder();
+		DepthFirstSearchInorderZ b = new DepthFirstSearchInorderZ();
 		System.out.println("Depth-First-Search : ");
 		b.DFS(root);
 	}

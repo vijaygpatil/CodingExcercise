@@ -6,7 +6,7 @@ package com.selfPractice.hash;
  */
 import java.util.*;
 
-public class CheckDuplicatesWithinKDistance {
+public class CheckDuplicatesWithinKDistanceZ {
 	static boolean checkDuplicatesWithinK(int arr[], int k) {
 		// Creates an empty hashset
 		HashSet<Integer> set = new HashSet<>();

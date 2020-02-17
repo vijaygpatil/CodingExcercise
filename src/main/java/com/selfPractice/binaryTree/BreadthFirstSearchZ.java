@@ -1,10 +1,10 @@
 package com.selfPractice.binaryTree;
 
-public class BreadthFirstSearch {
+public class BreadthFirstSearchZ {
 
 	BinaryTreeNodeZ root;
 
-	public BreadthFirstSearch() {
+	public BreadthFirstSearchZ() {
 		root = null;
 	}
 
@@ -37,7 +37,7 @@ public class BreadthFirstSearch {
 	}
 
 	public static void main(String args[]) {
-		BreadthFirstSearch tree = new BreadthFirstSearch();
+		BreadthFirstSearchZ tree = new BreadthFirstSearchZ();
 		tree.root = new BinaryTreeNodeZ(1);
 		tree.root.left = new BinaryTreeNodeZ(2);
 		tree.root.right = new BinaryTreeNodeZ(3);

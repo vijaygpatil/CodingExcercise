@@ -3,7 +3,7 @@ package com.selfPractice.hash;
 // A Java program to find if there is a zero sum subarray
 import java.util.HashMap;
 
-public class SubarrayWithZeroSum {
+public class SubarrayWithZeroSumZ {
 
 	// Returns true if arr[] has a subarray with sero sum
 	static Boolean printZeroSumSubarray(int arr[]) {
