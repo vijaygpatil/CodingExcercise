@@ -1,6 +1,6 @@
 package com.selfPractice.String;
 
-public class LongestCommonPrefix {
+public class LongestCommonPrefixZ {
 
 	public static void main(String[] args) {
 		String[] arr = { "geeksforgeeks", "geeks", "geek", "geezer" };

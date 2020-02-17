@@ -1,6 +1,6 @@
 package com.selfPractice.String;
 
-public class ExcelColoumnFromNumber {
+public class ExcelColoumnFromNumberZ {
 
 
 	// Function to print Excel column name for a given column number
@@ -30,7 +30,7 @@ public class ExcelColoumnFromNumber {
 
 		// Reverse the string and print result
 		//reverse(str, str + strlen(str));
-		System.out.println(str.toString());
+		System.out.println(str);
 
 		return;
 	}
@@ -38,12 +38,12 @@ public class ExcelColoumnFromNumber {
 	// Driver program to test above function
 	public static void main(String[] args)
 	{
-		printString(27);
-		printString(51);
-		printString(52);
-		printString(80);
-		printString(676);
-		printString(702);
+//		printString(27);
+//		printString(51);
+//		printString(52);
+//		printString(80);
+//		printString(676);
+//		printString(702);
 		printString(705);
 	}
 

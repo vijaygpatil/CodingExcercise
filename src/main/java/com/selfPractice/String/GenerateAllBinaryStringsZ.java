@@ -1,6 +1,6 @@
 package com.selfPractice.String;
 
-public class GenerateAllBinaryStrings {
+public class GenerateAllBinaryStringsZ {
 	public static void main(String[] args) {
 
 		String str = "1??0?101";

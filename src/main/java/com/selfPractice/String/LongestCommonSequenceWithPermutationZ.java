@@ -1,6 +1,6 @@
 package com.selfPractice.String;
 
-public class LongestCommonSequenceWithPermutation {
+public class LongestCommonSequenceWithPermutationZ {
 	private static void longestString(String str1, String str2) {
 		int[] count1 = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 		int[] count2 = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
@@ -26,7 +26,7 @@ public class LongestCommonSequenceWithPermutation {
 
 	// Driver program to run the case
 	public static void main(String[] args) {
-		String str1 = "geeks", str2 = "cake";
+		String str1 = "geeks", str2 = "cakes";
 		longestString(str1, str2);
 	}
 }

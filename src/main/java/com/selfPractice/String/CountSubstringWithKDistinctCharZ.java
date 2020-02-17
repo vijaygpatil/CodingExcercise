@@ -1,8 +1,8 @@
 package com.selfPractice.String;
 
-public class CountSubstringWithKDistinctChar {
+public class CountSubstringWithKDistinctCharZ {
 	public static void main(String[] args) {
-		CountSubstringWithKDistinctChar ob = new CountSubstringWithKDistinctChar();
+		CountSubstringWithKDistinctCharZ ob = new CountSubstringWithKDistinctCharZ();
 		String ch = "abcbaa";
 		int k = 3;
 		System.out.println("Total substrings with exactly " + k + " distinct characters : " + ob.countkDist(ch, k));

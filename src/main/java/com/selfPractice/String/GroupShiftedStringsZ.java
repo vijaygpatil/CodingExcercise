@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class GroupShiftedStrings {
+public class GroupShiftedStringsZ {
 	public static final int ALPHA = 26;
 
 	private static String getDiffString(String str) {
@@ -51,7 +51,7 @@ public class GroupShiftedStrings {
 
 	// Driver method to test above methods
 	public static void main(String[] args) {
-		String[] str = { "acd", "dfg", "wyz", "yab", "mop", "bdfh", "a", "x", "moqs" };
+		String[] str = { "acd", "dfg", "wyz", "yab", "mop", "bdfh", "a", "x", "moqs", "bafg"};
 		int n = str.length;
 		groupShiftedString(str, n);
 	}

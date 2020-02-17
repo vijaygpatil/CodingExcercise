@@ -1,6 +1,6 @@
 package com.selfPractice.array;
 
-class AreConsecutive {
+class AreConsecutiveZ {
 	/*
 	 * The function checks if the array elements are consecutive If elements are
 	 * consecutive, then returns true, else returns false
@@ -60,8 +60,8 @@ class AreConsecutive {
 
 	/* Driver program to test above functions */
 	public static void main(String[] args) {
-		AreConsecutive consecutive = new AreConsecutive();
-		int arr[] = { 5, 4, 2, 3, 1, 6 };
+		AreConsecutiveZ consecutive = new AreConsecutiveZ();
+		int arr[] = { 5, 4, 2, 3, 1, 7 };
 		int n = arr.length;
 		if (consecutive.areConsecutive(arr, n) == true)
 			System.out.println("Array elements are consecutive");

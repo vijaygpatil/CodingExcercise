@@ -18,7 +18,7 @@ public class XorPairCountZ {
 	public static void main(String[] args) {
 		int arr[] = { 5, 4, 10, 15, 7, 6 };
 		int n = arr.length;
-		int x = 5;
+		int x = 6;
 		System.out.println("Count of Pairs: " + xorPairCount(arr, n, x));
 	}
 }
