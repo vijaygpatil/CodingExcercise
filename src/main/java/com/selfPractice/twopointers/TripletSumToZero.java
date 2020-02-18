@@ -1,4 +1,4 @@
-package com.selfPractice.twopointers2;
+package com.selfPractice.twopointers;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package com.selfPractice.twopointers2;
+package com.selfPractice.twopointers;
 
 public class SortedArraySquares {
     public static void main(String[] args) {

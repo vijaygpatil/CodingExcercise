@@ -1,4 +1,4 @@
-package com.selfPractice.twopointers2;
+package com.selfPractice.twopointers;
 
 public class RemoveElement {
     public static void main(String[] args) {
