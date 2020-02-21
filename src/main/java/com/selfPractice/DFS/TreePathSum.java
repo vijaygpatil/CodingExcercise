@@ -23,6 +23,5 @@ public class TreePathSum {
 
         return hasPath(root.left, sum - root.val) || hasPath(root.right, sum - root.val);
 
-        return false;
     }
 }
