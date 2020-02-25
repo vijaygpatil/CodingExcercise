@@ -36,8 +36,10 @@ class QuickSort2 {
     }
 
     static void quick_sort(int[] arr) {
+
         quick_sort_rec(arr, 0, arr.length - 1);
     }
+
     public static void main(String[] args) {
         int[] a = new int[] {33, 6, 21, 12, 19, 29, 38, 22, 14, 40};
         for (int i : a) {

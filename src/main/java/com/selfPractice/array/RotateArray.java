@@ -1,49 +1,46 @@
 package com.selfPractice.array;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class RotateArray {
-	/* Function to left rotate arr[] of size n by d */
-	void leftRotate(int arr[], int d, int n) {
-		int i, j, k, temp;
-		for (i = 0; i < gcd(d, n); i++) {
-			/* move i-th values of blocks */
-			temp = arr[i];
-			j = i;
-			while (1 != 0) {
-				k = j + d;
-				if (k >= n)
-					k = k - n;
-				if (k == i)
-					break;
-				arr[j] = arr[k];
-				j = k;
-			}
-			arr[j] = temp;
+
+	static void reverseArray(List<Integer> arr, int start, int end) {
+		while (start < end) {
+			int temp = arr.get(start);
+			arr.set(start, arr.get(end));
+			arr.set(end, temp);
+			++start;
+			--end;
 		}
 	}
 
-	/* UTILITY FUNCTIONS */
-	/* function to print an array */
-	void printArray(int arr[], int size) {
-		int i;
-		for (i = 0; i < size; i++)
-			System.out.print(arr[i] + " ");
+	static void rotateArray(List<Integer> arr, int n) {
+
+		int len = arr.size();
+		// Let's normalize rotations
+		// if n > array size or n is negative.
+		n = n % len;
+		if (n < 0) {
+			// calculate the positive rotations needed.
+			n = n + len;
+		}
+
+		// Let's partition the array based on rotations 'n'.
+		// For example: 1, 2, 3, 4, 5 where n = 2.
+		// -> 5, 4, 3, 2, 1
+		// -> 4, 5, 3, 2, 1
+		// -> 4, 5, 1, 2, 3
+
+		reverseArray(arr, 0, len-1);
+		reverseArray(arr, 0, n-1);
+		reverseArray(arr, n, len-1);
 	}
 
-	/* Function to get gcd of a and b */
-	int gcd(int a, int b) {
-		if (b == 0)
-			return a;
-		else
-			return gcd(b, a % b);
-	}
-
-	// Driver program to test above functions
-	public static void main(String[] args) {
-		RotateArray rotate = new RotateArray();
-		int arr[] = { 1, 2, 3, 4, 5, 6, 7 };
-		rotate.leftRotate(arr, 2, 7);
-		rotate.printArray(arr, 7);
+	public static void main(String []args){
+		List<Integer> arr = Arrays.asList(1, 10, 20, 0, 59, 86, 32, 11, 9, 40);
+		System.out.println("Array Before Rotation\n"+arr);
+		rotateArray(arr, 2);
+		System.out.println("Array After Rotation\n"+arr);
 	}
 }
-
-// This code has been contributed by Mayank Jaiswal
