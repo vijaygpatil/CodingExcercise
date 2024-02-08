@@ -42,5 +42,7 @@ public class RotateArray {
 		System.out.println("Array Before Rotation\n"+arr);
 		rotateArray(arr, 2);
 		System.out.println("Array After Rotation\n"+arr);
+		rotateArray(arr, -12);
+		System.out.println("Array After Rotation\n"+arr);
 	}
 }

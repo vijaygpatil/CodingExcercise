@@ -1,45 +1,82 @@
 package com.selfPractice.InPlaceReverseLinkedList;
 
-public class ReverseLinkedList {
-    public static ListNode reverse(ListNode head) {
-
-        if(head == null || head.next == null) {
-            return head;
+class ReverseLinkedList {
+    // Assume that the linked list has left to right nodes.
+    // Reverse left to right nodes of the given linked list.
+    public static LinkedListNode reverse(LinkedListNode head, int left, int right) {
+        LinkedListNode prev = null;
+        LinkedListNode curr = head;
+        while (right >= left) {
+            LinkedListNode next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+            right--;
         }
-
-        ListNode previous = null;
-        ListNode current = head;
-        ListNode next = null;
-
-        while(current != null) {
-            next = current.next; // temporarily store the next node
-            current.next = previous; // reverse the current node
-            previous = current; // before we move to the next node, point previous to the current node
-            current = next; // move on the next node
-        }
-
-        return previous;
+        return prev;
     }
 
+    // Reverses the sublist between left and right in the linked list
+    public static LinkedListNode reverseBetween(LinkedListNode head, int left, int right) {
+        LinkedListNode curr = head;
+        LinkedListNode lpn = null;
+        LinkedListNode right_n = null;
+        LinkedListNode reverse_head = null;
+
+        int count = 1;
+        while (count < left && curr != null) {
+            lpn = curr;
+            curr = curr.next;
+            count++;
+        }
+        if (curr != null) {
+            LinkedListNode rpn = curr;
+            while (count <= right && rpn != null) {
+                right_n = rpn;
+                rpn = right_n.next;
+                count++;
+            }
+            if (right_n != null) {
+                reverse_head = reverse(curr, left, right);
+            }
+            if (lpn != null) {
+                lpn.next = reverse_head;
+            }
+            if (rpn != null) {
+                LinkedListNode tmp = reverse_head;
+                while (tmp.next != null) {
+                    tmp = tmp.next;
+                }
+                tmp.next = rpn;
+            }
+        }
+
+        if (lpn != null) {
+            return head;
+        } else {
+            return reverse_head;
+        }
+    }
+
+    // Driver Code
     public static void main(String[] args) {
-        ListNode head = new ListNode(2);
-        head.next = new ListNode(4);
-        head.next.next = new ListNode(6);
-        head.next.next.next = new ListNode(8);
-        head.next.next.next.next = new ListNode(10);
-
-//        System.out.print("Nodes of the LinkedList are: ");
-//        while (head != null) {
-//            System.out.print(head.val + " ");
-//            head = head.next;
-//        }
-//        System.out.println();
-
-        ListNode result = ReverseLinkedList.reverse(head);
-        System.out.print("Nodes of the reversed LinkedList are: ");
-        while (result != null) {
-            System.out.print(result.val + " ");
-            result = result.next;
+        int[][] input = {
+            {1, 2, 3, 4, 5, 6, 7},
+            {6, 9, 3, 10, 7, 4, 6},
+            {6, 9, 3, 4},
+            {6, 2, 3, 6, 9},
+            {6, 2}
+        };
+        int[] left = {1, 3, 2, 1, 1};
+        int[] right = {5, 6, 4, 3, 2};
+        for(int i=0; i<input.length; i++){
+            System.out.print(i+1);
+            LinkedList<Integer> list = new LinkedList<Integer>();
+            list.createLinkedList(input[i]);
+            System.out.print(".\tOriginal linked list is:  ");
+            PrintList.printListWithForwardArrow(list.head);
+            System.out.print("\tReversed linked list is:  " );
+            PrintList.printListWithForwardArrow(reverseBetween(list.head,left[i],right[i]));
         }
     }
 }
