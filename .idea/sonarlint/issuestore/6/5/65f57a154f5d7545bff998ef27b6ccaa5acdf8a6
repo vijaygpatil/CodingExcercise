@@ -1,0 +1,15 @@
+
+d
+java:S1192%"GDefine a constant instead of duplicating this literal "Remove" 3 times.(äÚ‚¢8È ´ºØ1
+v
+java:S1104"TMake keySpace a static final constant or non-public and provide accessors if needed.(Ç­¡øûÿÿÿÿ8È ´ºØ1
+o
+java:S1104"SMake hashMap a static final constant or non-public and provide accessors if needed.(‘…Ñ8È ´ºØ1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ãéôîıÿÿÿÿ8É ´ºØ1
+L
+java:S1197!"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8¡´ºØ1
+L	java:S106."+Replace this use of System.out by a logger.(Ğú™şÿÿÿÿ8ƒ¡´ºØ1
+L	java:S1064"+Replace this use of System.out by a logger.(ÏåàÉşÿÿÿÿ8…¡´ºØ1
+G	java:S1065"+Replace this use of System.out by a logger.(—óºµ8…¡´ºØ1
+L	java:S1067"+Replace this use of System.out by a logger.(şæÕüÿÿÿÿÿ8…¡´ºØ1
+G	java:S106;"+Replace this use of System.out by a logger.(±Œòã8†¡´ºØ1

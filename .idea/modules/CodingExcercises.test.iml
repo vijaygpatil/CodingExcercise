@@ -8,5 +8,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="CodingExcercises.main" />
   </component>
+  <component name="SonarLintModuleSettings">
+    <option name="uniqueId" value="8ad595be-1136-4f7e-8d58-013919d3c0d2" />
+  </component>
   <component name="TestModuleProperties" production-module="CodingExcercises.main" />
 </module>

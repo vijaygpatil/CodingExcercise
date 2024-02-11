@@ -30,4 +30,6 @@ class TreeNode {
             System.out.println();
         }
     }
+
+    System.out.println();
 };

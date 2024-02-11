@@ -1,0 +1,12 @@
+
+v
+java:S2293	"YReplace the type specification in this constructor call with the diamond operator ("<>").(òæ¨ü8“œ¶¼Ø1
+>
+java:S1643&"Use a StringBuilder instead.(µä—üÿÿÿÿ8”œ¶¼Ø1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ãéôîıÿÿÿÿ8•œ¶¼Ø1
+L	java:S1062"+Replace this use of System.out by a logger.(µ° øÿÿÿÿ8¨œ¶¼Ø1
+F	java:S1064"+Replace this use of System.out by a logger.(şÁĞE8¨œ¶¼Ø1
+L	java:S1065"+Replace this use of System.out by a logger.(Ø–ªùÿÿÿÿ8¨œ¶¼Ø1
+F	java:S1067"+Replace this use of System.out by a logger.(‹™Á!8¨œ¶¼Ø1
+L	java:S1069"+Replace this use of System.out by a logger.(ŸÏÅùÿÿÿÿ8©œ¶¼Ø1
+G	java:S106:"+Replace this use of System.out by a logger.(±Œòã8©œ¶¼Ø1
